@@ -63,6 +63,10 @@ output "role_arn" {
   value       = aws_iam_role.main.arn
 }
 
+output "role_name" {
+  value = aws_iam_role.main.name
+}
+
 output "instance_profile_arn" {
   description = "The ARN of the instance profile used by the fck-nat instance"
   value       = aws_iam_instance_profile.main.arn
